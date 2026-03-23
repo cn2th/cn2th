@@ -1,0 +1,1081 @@
+@import url("webfonts/supermarket/stylesheet.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Sarabun, sans-serif;
+  font-size: 18px;  
+  color: #000;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 32px;
+  color: #D86C00;
+  text-align: center;
+  font-weight: 700;
+  font-family: Kanit, sans-serif;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* ===== Hero Banner Section ===== */
+.hero-banner {
+  height: 548px;
+  position: relative;
+  background-image: url('../images/bg1.jpg');
+  background-size: cover;
+  background-position: center 40%;
+  background-repeat: no-repeat;
+}
+
+/* PC端：添加伪元素作为暗层 */
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* 修复结构 */
+.content-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+/* 左侧文字 */
+.text-side {
+  position: absolute;
+  left: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 420px;
+  padding: 25px;
+}
+
+/* 标题 */
+.brand-th {
+  font-size: 44px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: Kanit, sans-serif;
+  line-height: 1.3;
+}
+
+.brand-en {
+  font-size: 26px;
+  font-weight: 700;
+  color: #ffd700;
+  margin-bottom: 20px;
+  font-family: Sarabun, sans-serif;
+}
+
+/* 内容块 */
+.feature-box {
+  padding: 18px;
+  border-left: 4px solid #D86C00;
+  margin-bottom: 15px;
+  line-height: 1.7;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 4px;
+}
+
+.feature-box p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* 红色条 */
+.price-highlight {
+  position: absolute;
+  left: 55%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #ffd700;
+  font-weight: 700;
+  background: #d32f2f;
+  padding: 12px 18px;
+  border-radius: 4px;
+  white-space: nowrap;
+  z-index: 5;
+}
+
+/* 右侧二维码 */
+.qr-side {
+  position: absolute;
+  right: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* 二维码 */
+.qr-container {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.qr-container img {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.qr-container span {
+  display: block;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* ===== BG2 Section (Rock Dust) ===== */
+.bg2 {
+  background-color: #f5f7fa;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.rock-dust-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+}
+
+.rock-dust-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.rock-dust-text p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.rock-dust-image {
+  flex: 0 0 auto;
+  text-align: right;
+}
+
+.rock-dust-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* ===== BG3 Section (Sand & Stone) ===== */
+.bg3 {
+  background-color: #e6f2ff;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+}
+
+.container2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.sand-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.sand-image {
+  flex: 0 0 339px;
+  text-align: center;
+}
+
+.sand-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.sand-text {
+  flex: 1;
+  min-width: 300px;
+  padding-top: 30px;
+}
+
+.sand-text p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.stone-specs {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.stone-specs-text {
+  flex: 1;
+  width: 100%;
+  line-height: 2.2;
+  font-size: 18px;
+}
+
+.stone-specs-image {
+  text-align: center;
+}
+
+.stone-specs-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.usage-description {
+  text-align: left;
+  padding: 40px 20px;
+  margin-top: 40px;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+.usage-description p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+/* 运输报价 section - 使用 bg3-alt */
+.bg3-alt {
+  background-color: #f5f5f5; /* 或其他颜色，根据您的设计 */
+  padding: 40px 0;
+}
+
+/* 如果要和 bg3 完全一样的样式 */
+.bg3-alt {
+  background: linear-gradient(135deg, #e8f4f8 0%, #f0f8fc 100%);
+  padding: 40px 0;
+}
+/* ===== Flower Section (Bricks) ===== */
+.flower-section {
+  background-image: url('');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+}
+
+.flower-title {
+  font-size: 28px;
+  color: #8B4513;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.flower-description {
+  text-align: center;
+  padding: 30px;
+  line-height: 1.8;
+  font-size: 18px;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+.flower-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.flower-gallery img {
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.flower-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== BG4 Section (Quality) ===== */
+.bg4 {
+  background-color: #e6f2ff;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+}
+
+.quality-title {
+  font-size: 28px;
+  color: #8B4513;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.quality-content {
+  padding: 40px;
+  margin-bottom: 30px;
+}
+
+.quality-content p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.quality-images {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.quality-images a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.quality-images img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.quality-images img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Footer Section ===== */
+.bggray {
+  background-color: #f5f7fa;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+}
+
+.bggray .container {
+  padding: 40px;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer-logo img {
+  max-width: 300px;
+  height: auto;
+}
+
+.footer-info {
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.footer-info strong {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer-qr {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.footer-qr img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.footer-map {
+  margin: 30px 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.footer-map iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+  border-radius: 8px;
+}
+
+.footer-hashtags {
+  font-size: 14px;
+  color: #333;
+  margin: 20px 0;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.footer {
+  font-size: 14px;
+  color: #666;
+  margin-top: 30px;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  text-align: center;
+}
+
+/* ===== 平板端响应式 (768px 以下) ===== */
+@media (max-width: 768px) {
+  /* ===== 全局字体 ===== */
+  body {
+    font-size: 15px !important;
+  }
+
+  h2 {
+    font-size: 22px !important;
+    margin-bottom: 15px !important;
+  }
+
+  h3 {
+    font-size: 18px !important;
+  }
+
+  p {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+  }
+
+  /* ===== Hero Banner ===== */
+  .hero-banner {
+    height: auto !important;
+    min-height: 600px !important;
+    background-attachment: scroll !important;
+    padding: 40px 0 !important;
+  }
+
+  .hero-banner::before {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+  }
+
+  .content-wrapper {
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 20px !important;
+    gap: 30px !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .text-side {
+    position: static !important;
+    transform: none !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100% !important;
+    padding: 0 !important;
+    text-align: center !important;
+    order: 1 !important;
+  }
+
+  .brand-th {
+    font-size: 28px !important;
+    line-height: 1.4 !important;
+    margin-bottom: 10px !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8), 0 0 20px rgba(255, 255, 255, 0.3) !important;
+    font-weight: 800 !important;
+    color: #fff !important;
+  }
+
+  .brand-en {
+    font-size: 18px !important;
+    line-height: 1.4 !important;
+    margin-bottom: 15px !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8), 0 0 20px rgba(255, 255, 255, 0.3) !important;
+    font-weight: 800 !important;
+    color: #ffd700 !important;
+  }
+
+  .feature-box {
+    background: rgba(0, 0, 0, 0.6) !important;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5) !important;
+    padding: 15px 12px !important;
+    margin-bottom: 15px !important;
+    border-radius: 4px !important;
+    width: 90% !important;
+    max-width: 400px !important;
+  }
+
+  .feature-box p {
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8) !important;
+    font-weight: 600 !important;
+    color: #fff !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 8px !important;
+  }
+
+  .feature-box p:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .price-highlight {
+    position: static !important;
+    transform: none !important;
+    left: auto !important;
+    top: auto !important;
+    width: 90% !important;
+    max-width: 400px !important;
+    text-align: center !important;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+    font-size: 16px !important;
+    white-space: normal !important;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6) !important;
+    font-weight: 800 !important;
+    padding: 12px !important;
+    background: rgba(220, 20, 60, 0.9) !important;
+    border-radius: 4px !important;
+    order: 2 !important;
+  }
+
+  .qr-side {
+    position: static !important;
+    transform: none !important;
+    right: auto !important;
+    top: auto !important;
+    width: 100% !important;
+    margin-top: 15px !important;
+    order: 3 !important;
+  }
+
+  .qr-container {
+    max-width: 200px !important;
+    margin: 0 auto !important;
+    background: rgba(0, 0, 0, 0.8) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7) !important;
+    padding: 15px !important;
+    border-radius: 8px !important;
+  }
+
+  .qr-container img {
+    width: 140px !important;
+    height: 140px !important;
+    display: block !important;
+    margin: 0 auto 10px !important;
+  }
+
+  .qr-container span {
+    display: block !important;
+    text-align: center !important;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8) !important;
+    font-weight: 600 !important;
+    color: #fff !important;
+    font-size: 14px !important;
+  }
+
+  /* ===== 陆运 Section ===== */
+  .rock-dust-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    padding: 20px 0 !important;
+    align-items: center !important;
+  }
+
+  .rock-dust-text {
+    width: 100% !important;
+    flex: none !important;
+    min-width: auto !important;
+    order: 1 !important;
+    padding: 0 15px !important;
+  }
+
+  .rock-dust-text h2 {
+    font-size: 22px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .rock-dust-text p {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    color: #333 !important;
+  }
+
+  .rock-dust-image {
+    width: 100% !important;
+    flex: none !important;
+    text-align: center !important;
+    order: 2 !important;
+    padding: 0 15px !important;
+  }
+
+  .rock-dust-image img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+  }
+
+  /* ===== 海运 Section ===== */
+  .sand-section {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    margin-bottom: 30px !important;
+    align-items: center !important;
+  }
+
+  .sand-image {
+    width: 100% !important;
+    flex: none !important;
+    order: 1 !important;
+  }
+
+  .sand-image img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .sand-text {
+    width: 100% !important;
+    flex: none !important;
+    min-width: auto !important;
+    padding: 0 15px !important;
+    order: 2 !important;
+  }
+
+  .sand-text p {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    color: #333 !important;
+  }
+
+  /* ===== 报价表 ===== */
+  .stone-specs {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    margin-top: 20px !important;
+    align-items: center !important;
+  }
+
+  .stone-specs-image {
+    width: 100% !important;
+    flex: none !important;
+  }
+
+  .stone-specs-image img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .usage-description {
+    padding: 20px 15px !important;
+    margin-top: 20px !important;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    text-align: left !important;
+  }
+
+  .usage-description p {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+  }
+
+  /* ===== 花卉 Section ===== */
+  .flower-description {
+    padding: 20px !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+
+  /* ===== 品质 Section ===== */
+  .quality-content p {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+  }
+
+  /* ===== 页脚 ===== */
+  .footer-info {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+  }
+
+  .footer-hashtags {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+  }
+
+  /* ===== 容器 ===== */
+  .container,
+  .container2 {
+    max-width: 100% !important;
+    padding: 20px 0 !important;
+    margin: 0 !important;
+  }
+
+  .bg2,
+  .bg3,
+  .bg3-alt {
+    padding: 30px 15px !important;
+  }
+
+  .brown54 {
+    font-size: 20px !important;
+    margin-bottom: 15px !important;
+  }
+}
+
+/* ===== 手机端响应式 (480px 以下) ===== */
+@media (max-width: 480px) {
+  /* ===== 全局字体 ===== */
+  body {
+    font-size: 14px !important;
+  }
+
+  h2 {
+    font-size: 20px !important;
+    margin-bottom: 12px !important;
+  }
+
+  h3 {
+    font-size: 16px !important;
+  }
+
+  p {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+  }
+
+  /* ===== Hero Banner ===== */
+  .hero-banner {
+    height: auto !important;
+    min-height: 550px !important;
+    background-attachment: scroll !important;
+    padding: 30px 0 !important;
+  }
+
+  .hero-banner::before {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+  }
+
+  .content-wrapper {
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 15px !important;
+    gap: 20px !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .text-side {
+    position: static !important;
+    transform: none !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100% !important;
+    padding: 0 !important;
+    text-align: center !important;
+    order: 1 !important;
+  }
+
+  .brand-th {
+    font-size: 24px !important;
+    line-height: 1.3 !important;
+    margin-bottom: 8px !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9), 0 0 25px rgba(255, 255, 255, 0.4) !important;
+    font-weight: 900 !important;
+    color: #fff !important;
+  }
+
+  .brand-en {
+    font-size: 16px !important;
+    line-height: 1.3 !important;
+    margin-bottom: 12px !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9), 0 0 25px rgba(255, 255, 255, 0.4) !important;
+    font-weight: 900 !important;
+    color: #ffd700 !important;
+  }
+
+  .feature-box {
+    background: rgba(0, 0, 0, 0.7) !important;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6) !important;
+    padding: 12px 10px !important;
+    margin-bottom: 12px !important;
+    border-radius: 4px !important;
+    width: 95% !important;
+    max-width: 350px !important;
+  }
+
+  .feature-box p {
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.9) !important;
+    font-weight: 700 !important;
+    color: #fff !important;
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+    margin-bottom: 6px !important;
+  }
+
+  .feature-box p:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .price-highlight {
+    position: static !important;
+    transform: none !important;
+    left: auto !important;
+    top: auto !important;
+    width: 95% !important;
+    max-width: 350px !important;
+    text-align: center !important;
+    margin-top: 12px !important;
+    margin-bottom: 12px !important;
+    font-size: 14px !important;
+    white-space: normal !important;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.9) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7) !important;
+    font-weight: 900 !important;
+    padding: 10px !important;
+    background: rgba(220, 20, 60, 0.95) !important;
+    border-radius: 4px !important;
+    order: 2 !important;
+  }
+
+  .qr-side {
+    position: static !important;
+    transform: none !important;
+    right: auto !important;
+    top: auto !important;
+    width: 100% !important;
+    margin-top: 12px !important;
+    order: 3 !important;
+  }
+
+  .qr-container {
+    max-width: 160px !important;
+    margin: 0 auto !important;
+    background: rgba(0, 0, 0, 0.85) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8) !important;
+    padding: 12px !important;
+    border-radius: 8px !important;
+  }
+
+  .qr-container img {
+    width: 120px !important;
+    height: 120px !important;
+    display: block !important;
+    margin: 0 auto 8px !important;
+  }
+
+  .qr-container span {
+    display: block !important;
+    text-align: center !important;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.9) !important;
+    font-weight: 700 !important;
+    color: #fff !important;
+    font-size: 12px !important;
+  }
+
+  /* ===== 陆运 Section ===== */
+  .rock-dust-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 15px !important;
+    padding: 15px 0 !important;
+    align-items: center !important;
+  }
+
+  .rock-dust-text {
+    width: 100% !important;
+    flex: none !important;
+    min-width: auto !important;
+    order: 1 !important;
+    padding: 0 12px !important;
+  }
+
+  .rock-dust-text h2 {
+    font-size: 20px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .rock-dust-text p {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    color: #333 !important;
+  }
+
+  .rock-dust-image {
+    width: 100% !important;
+    flex: none !important;
+    text-align: center !important;
+    order: 2 !important;
+    padding: 0 12px !important;
+  }
+
+  .rock-dust-image img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+  }
+
+  /* ===== 海运 Section ===== */
+  .sand-section {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 15px !important;
+    margin-bottom: 20px !important;
+    align-items: center !important;
+  }
+
+  .sand-image {
+    width: 100% !important;
+    flex: none !important;
+    order: 1 !important;
+  }
+
+  .sand-image img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .sand-text {
+    width: 100% !important;
+    flex: none !important;
+    min-width: auto !important;
+    padding: 0 12px !important;
+    order: 2 !important;
+  }
+
+  .sand-text p {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    color: #333 !important;
+  }
+
+  /* ===== 报价表 ===== */
+  .stone-specs {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 15px !important;
+    margin-top: 15px !important;
+    align-items: center !important;
+  }
+
+  .stone-specs-image {
+    width: 100% !important;
+    flex: none !important;
+  }
+
+  .stone-specs-image img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .usage-description {
+    padding: 15px 12px !important;
+    margin-top: 15px !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    text-align: left !important;
+  }
+
+  .usage-description p {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+  }
+
+  /* ===== 花卉 Section ===== */
+  .flower-description {
+    padding: 15px !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+  }
+
+  /* ===== 品质 Section ===== */
+  .quality-content p {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+  }
+
+  /* ===== 页脚 ===== */
+  .footer-info {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+  }
+
+  .footer-hashtags {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+  }
+
+  /* ===== 容器 ===== */
+  .container,
+  .container2 {
+    max-width: 100% !important;
+    padding: 15px 0 !important;
+    margin: 0 !important;
+  }
+
+  .bg2,
+  .bg3,
+  .bg3-alt {
+    padding: 20px 12px !important;
+  }
+
+  .brown54 {
+    font-size: 18px !important;
+    margin-bottom: 12px !important;
+  }
+}
